@@ -34,7 +34,7 @@ namespace MPP
         /// Inserta un usuario en Bd
         /// </summary>
         /// <param name="usuario">Tipo Usuario</param>
-        /// <returns>Devuelve si se inserto O no</returns>
+        /// <returns>Devuelve si se inserto o no</returns>
         public bool InsertarUsuario(Usuario usuario)
         {
             BTSDataContext BaseDeDatos = new BTSDataContext();
@@ -52,10 +52,10 @@ namespace MPP
 
 
         /// <summary>
-        /// Inserta un usuario en Bd
+        /// Actualiza un usuario en Bd
         /// </summary>
         /// <param name="usuario">Tipo Usuario</param>
-        /// <returns>Devuelve si se inserto O no</returns>
+        /// <returns>Devuelve si se actualiza o no</returns>
         public bool Actualizar(Usuario usuario)
         {
             BTSDataContext BaseDeDatos = new BTSDataContext();
@@ -73,10 +73,10 @@ namespace MPP
         }
 
         /// <summary>
-        /// Inserta un usuario en Bd
+        /// Elimina un usuario en Bd
         /// </summary>
         /// <param name="usuario">Tipo Usuario</param>
-        /// <returns>Devuelve si se inserto O no</returns>
+        /// <returns>Devuelve si se elimino o no</returns>
         public bool Borrar(Usuario usuario)
         {
             BTSDataContext BaseDeDatos = new BTSDataContext();

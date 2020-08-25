@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MPP", "MPP\MPP.csproj", "{3
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{53280492-7242-4818-9CE6-025041BA50A8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{FF6E7311-04CF-458A-9C3D-976B0E372833}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BE", "BE\BE.csproj", "{0441E213-B65C-41CE-8E62-8C38A659289A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{53280492-7242-4818-9CE6-025041BA50A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53280492-7242-4818-9CE6-025041BA50A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53280492-7242-4818-9CE6-025041BA50A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF6E7311-04CF-458A-9C3D-976B0E372833}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF6E7311-04CF-458A-9C3D-976B0E372833}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF6E7311-04CF-458A-9C3D-976B0E372833}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF6E7311-04CF-458A-9C3D-976B0E372833}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0441E213-B65C-41CE-8E62-8C38A659289A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0441E213-B65C-41CE-8E62-8C38A659289A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0441E213-B65C-41CE-8E62-8C38A659289A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0441E213-B65C-41CE-8E62-8C38A659289A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
