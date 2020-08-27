@@ -357,6 +357,188 @@ namespace DAL
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), idUsuario, idAdministrador);
 			return ((int)(result.ReturnValue));
 		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.InsertarRol")]
+		public int InsertarRol([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Nombre", DbType="VarChar(50)")] string nombre, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Descripcion", DbType="VarChar(50)")] string descripcion, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="TipoRol", DbType="VarChar(50)")] string tipoRol)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), nombre, descripcion, tipoRol);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.InsertarRemito")]
+		public int InsertarRemito([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Fecha", DbType="DateTime")] System.Nullable<System.DateTime> fecha, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="NroPedido", DbType="Int")] System.Nullable<int> nroPedido, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="NroFactura", DbType="Int")] System.Nullable<int> nroFactura, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Descripcion", DbType="VarChar(50)")] string descripcion, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Notas", DbType="VarChar(50)")] string notas, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Estado", DbType="VarChar(50)")] string estado)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), fecha, nroPedido, nroFactura, descripcion, notas, estado);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.InsertarProveedor")]
+		public int InsertarProveedor([global::System.Data.Linq.Mapping.ParameterAttribute(Name="CodProveedor", DbType="VarChar(50)")] string codProveedor, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="NombreEmpresa", DbType="VarChar(50)")] string nombreEmpresa, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="RazonSocial", DbType="VarChar(50)")] string razonSocial, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Domicilio", DbType="VarChar(50)")] string domicilio, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Email", DbType="VarChar(50)")] string email, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Telefono", DbType="VarChar(50)")] string telefono, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Descripion", DbType="VarChar(50)")] string descripion, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Cuit", DbType="Int")] System.Nullable<int> cuit)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), codProveedor, nombreEmpresa, razonSocial, domicilio, email, telefono, descripion, cuit);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.InsertarPrecio")]
+		public int InsertarPrecio([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Fecha", DbType="DateTime")] System.Nullable<System.DateTime> fecha, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="PrecioCompra", DbType="Float")] System.Nullable<double> precioCompra, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="PrecioAnterior", DbType="Float")] System.Nullable<double> precioAnterior, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="PorcentajeVenta", DbType="Float")] System.Nullable<double> porcentajeVenta, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="PrecioPublicado", DbType="Float")] System.Nullable<double> precioPublicado, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Descripion", DbType="VarChar(50)")] string descripion)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), fecha, precioCompra, precioAnterior, porcentajeVenta, precioPublicado, descripion);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.InsertarPermiso")]
+		public int InsertarPermiso([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Nombre", DbType="VarChar(50)")] string nombre, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Descripcion", DbType="VarChar(50)")] string descripcion, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="TipoPermiso", DbType="VarChar(50)")] string tipoPermiso)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), nombre, descripcion, tipoPermiso);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.InsertarModelo")]
+		public int InsertarModelo([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Nombre", DbType="VarChar(50)")] string nombre, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Descripion", DbType="VarChar(50)")] string descripion)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), nombre, descripion);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.EliminarUsuario")]
+		public int EliminarUsuario([global::System.Data.Linq.Mapping.ParameterAttribute(Name="IdUsuario", DbType="Int")] System.Nullable<int> idUsuario)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), idUsuario);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.EliminarRol")]
+		public int EliminarRol([global::System.Data.Linq.Mapping.ParameterAttribute(Name="IdRol", DbType="Int")] System.Nullable<int> idRol)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), idRol);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.EliminarProveedor")]
+		public int EliminarProveedor([global::System.Data.Linq.Mapping.ParameterAttribute(Name="IdProveedor", DbType="Int")] System.Nullable<int> idProveedor)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), idProveedor);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.EliminarPrecio")]
+		public int EliminarPrecio([global::System.Data.Linq.Mapping.ParameterAttribute(Name="IdPrecio", DbType="Int")] System.Nullable<int> idPrecio)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), idPrecio);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.EliminarPermiso")]
+		public int EliminarPermiso([global::System.Data.Linq.Mapping.ParameterAttribute(Name="IdPermiso", DbType="Int")] System.Nullable<int> idPermiso)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), idPermiso);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.EliminarModelo")]
+		public int EliminarModelo([global::System.Data.Linq.Mapping.ParameterAttribute(Name="IdModelo", DbType="Int")] System.Nullable<int> idModelo)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), idModelo);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.AnularRemito")]
+		public int AnularRemito([global::System.Data.Linq.Mapping.ParameterAttribute(Name="NroRemito", DbType="Int")] System.Nullable<int> nroRemito, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Estado", DbType="VarChar(50)")] string estado)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), nroRemito, estado);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ActualizarRol")]
+		public int ActualizarRol([global::System.Data.Linq.Mapping.ParameterAttribute(Name="IdRol", DbType="Int")] System.Nullable<int> idRol, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Nombre", DbType="VarChar(50)")] string nombre, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Descripcion", DbType="VarChar(50)")] string descripcion, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="TipoRol", DbType="VarChar(50)")] string tipoRol)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), idRol, nombre, descripcion, tipoRol);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ActualizarProveedor")]
+		public int ActualizarProveedor([global::System.Data.Linq.Mapping.ParameterAttribute(Name="IdProveedor", DbType="Int")] System.Nullable<int> idProveedor, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="CodProveedor", DbType="VarChar(50)")] string codProveedor, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="NombreEmpresa", DbType="VarChar(50)")] string nombreEmpresa, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="RazonSocial", DbType="VarChar(50)")] string razonSocial, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Domicilio", DbType="VarChar(50)")] string domicilio, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Email", DbType="VarChar(50)")] string email, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Telefono", DbType="VarChar(50)")] string telefono, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Descripcion", DbType="VarChar(50)")] string descripcion, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Cuit", DbType="VarChar(50)")] string cuit)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), idProveedor, codProveedor, nombreEmpresa, razonSocial, domicilio, email, telefono, descripcion, cuit);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ActualizarPrecio")]
+		public int ActualizarPrecio([global::System.Data.Linq.Mapping.ParameterAttribute(Name="IdPrecio", DbType="Int")] System.Nullable<int> idPrecio, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Fecha", DbType="DateTime")] System.Nullable<System.DateTime> fecha, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="PrecioCompra", DbType="Float")] System.Nullable<double> precioCompra, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="PrecioAnterior", DbType="Float")] System.Nullable<double> precioAnterior, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="PorcentajeVenta", DbType="Float")] System.Nullable<double> porcentajeVenta, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="PrecioPublicado", DbType="Float")] System.Nullable<double> precioPublicado, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Descripion", DbType="VarChar(50)")] string descripion)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), idPrecio, fecha, precioCompra, precioAnterior, porcentajeVenta, precioPublicado, descripion);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ActualizarPermiso")]
+		public int ActualizarPermiso([global::System.Data.Linq.Mapping.ParameterAttribute(Name="IdPermiso", DbType="Int")] System.Nullable<int> idPermiso, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Nombre", DbType="VarChar(50)")] string nombre, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Descripcion", DbType="VarChar(50)")] string descripcion, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="TipoPermiso", DbType="VarChar(50)")] string tipoPermiso)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), idPermiso, nombre, descripcion, tipoPermiso);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ActualizarModelo")]
+		public int ActualizarModelo([global::System.Data.Linq.Mapping.ParameterAttribute(Name="IdModelo", DbType="Int")] System.Nullable<int> idModelo, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Nombre", DbType="VarChar(50)")] string nombre, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Descripion", DbType="VarChar(50)")] string descripion)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), idModelo, nombre, descripion);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ActualizarMarca")]
+		public int ActualizarMarca([global::System.Data.Linq.Mapping.ParameterAttribute(Name="IdMarca", DbType="Int")] System.Nullable<int> idMarca, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Nombre", DbType="VarChar(50)")] string nombre, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Descripion", DbType="VarChar(50)")] string descripion)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), idMarca, nombre, descripion);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.EliminarMarca")]
+		public int EliminarMarca([global::System.Data.Linq.Mapping.ParameterAttribute(Name="IdMarca", DbType="Int")] System.Nullable<int> idMarca)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), idMarca);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.InsertarMarca")]
+		public int InsertarMarca([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Nombre", DbType="VarChar(50)")] string nombre, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Descripion", DbType="VarChar(50)")] string descripion)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), nombre, descripion);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.AnularRecibo")]
+		public int AnularRecibo([global::System.Data.Linq.Mapping.ParameterAttribute(Name="NroRecibo", DbType="Int")] System.Nullable<int> nroRecibo)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), nroRecibo);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.GenerarRecibo")]
+		public int GenerarRecibo([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Fecha", DbType="DateTime")] System.Nullable<System.DateTime> fecha, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="CodCliente", DbType="Int")] System.Nullable<int> codCliente, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Descripion", DbType="VarChar(50)")] string descripion, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ImporteTotal", DbType="Float")] System.Nullable<double> importeTotal, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Notas", DbType="VarChar(50)")] string notas, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Estado", DbType="VarChar(50)")] string estado, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="NroFactura", DbType="Int")] System.Nullable<int> nroFactura)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), fecha, codCliente, descripion, importeTotal, notas, estado, nroFactura);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ActualizarProducto")]
+		public int ActualizarProducto([global::System.Data.Linq.Mapping.ParameterAttribute(Name="IdProd", DbType="Int")] System.Nullable<int> idProd, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Upc", DbType="VarChar(50)")] string upc, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Nombre", DbType="VarChar(50)")] string nombre, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Descripion", DbType="VarChar(50)")] string descripion, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Categoria", DbType="VarChar(50)")] string categoria, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="TipoInstrumento", DbType="VarChar(50)")] string tipoInstrumento, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IdMarca", DbType="Int")] System.Nullable<int> idMarca, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IdModelo", DbType="Int")] System.Nullable<int> idModelo, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="CodProveedor", DbType="VarChar(50)")] string codProveedor, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IdProveedor", DbType="Int")] System.Nullable<int> idProveedor, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Color", DbType="VarChar(50)")] string color, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Estado", DbType="VarChar(50)")] string estado, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Precio", DbType="Float")] System.Nullable<double> precio)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), idProd, upc, nombre, descripion, categoria, tipoInstrumento, idMarca, idModelo, codProveedor, idProveedor, color, estado, precio);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.EliminarProducto")]
+		public int EliminarProducto([global::System.Data.Linq.Mapping.ParameterAttribute(Name="IdProd", DbType="Int")] System.Nullable<int> idProd)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), idProd);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.InsertarProducto")]
+		public int InsertarProducto([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Upc", DbType="VarChar(50)")] string upc, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Nombre", DbType="VarChar(50)")] string nombre, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Descripion", DbType="VarChar(50)")] string descripion, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Categoria", DbType="VarChar(50)")] string categoria, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="TipoInstrumento", DbType="VarChar(50)")] string tipoInstrumento, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IdMarca", DbType="Int")] System.Nullable<int> idMarca, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IdModelo", DbType="Int")] System.Nullable<int> idModelo, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="CodProveedor", DbType="VarChar(50)")] string codProveedor, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IdProveedor", DbType="Int")] System.Nullable<int> idProveedor, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Color", DbType="VarChar(50)")] string color, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Estado", DbType="VarChar(50)")] string estado, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Precio", DbType="Float")] System.Nullable<double> precio)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), upc, nombre, descripion, categoria, tipoInstrumento, idMarca, idModelo, codProveedor, idProveedor, color, estado, precio);
+			return ((int)(result.ReturnValue));
+		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.[Backup]")]

@@ -80,7 +80,7 @@ namespace MPP
         public bool Borrar(Usuario usuario)
         {
             BTSDataContext BaseDeDatos = new BTSDataContext();
-            int filasAFECTADAS = BaseDeDatos.EliminarUsuario(usuario.IdUsuario, 1);
+            int filasAFECTADAS = BaseDeDatos.EliminarUsuario(usuario.IdUsuario);
         
             if (filasAFECTADAS > 0)
             {
